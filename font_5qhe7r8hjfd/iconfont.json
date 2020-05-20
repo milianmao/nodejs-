@@ -1,0 +1,23 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1165",
+      "name": "管理员",
+      "font_class": "guanliyuan",
+      "unicode": "f00ec",
+      "unicode_decimal": 983276
+    },
+    {
+      "icon_id": "999224",
+      "name": "锁",
+      "font_class": "ai242",
+      "unicode": "e6e6",
+      "unicode_decimal": 59110
+    }
+  ]
+}

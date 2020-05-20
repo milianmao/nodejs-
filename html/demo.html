@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>demo</title>
+        <link type="text/css" rel="stylesheet" href="../css/gm.css" /> 
+    </head>
+    <body>
+        <table id='table-demo-fixedCode'></table>
+    </body>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="../js/gm.js"></script>
+    <script>
+        document.querySelector('#table-demo-fixedCode').GM({
+    gridManagerName: 'demo-fixedCode',
+    ajaxData: 'https://www.lovejavascript.com/learnLinkManager/getLearnLinkList',
+    ajaxType: 'POST',
+    supportAjaxPage: true,
+    supportAdjust: false,
+    supportDrag: false,
+    checkboxConfig: {
+        fixed: 'left'
+    },
+    autoOrderConfig: {
+        fixed: 'left'
+    },
+    columnData: [
+        {
+            key: 'name',
+            text: '名称',
+            width: '200px'
+        },{
+            key: 'info',
+            text: '说明',
+            width: '500px'
+        },{
+            key: 'url',
+            text: 'url',
+            width: '500px'
+        },{
+            key: 'action',
+            text: '操作',
+            width: '100px',
+            fixed: 'right',
+            template: (action, row) => {
+                return '<a href="' + row.url + '" target="_blank">查 看</a>';
+            }
+        }
+    ]
+});
+    </script>
+</html>
